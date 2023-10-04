@@ -40,7 +40,7 @@ h2{
 }
 
 h5{
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bolder;
 }
 
@@ -81,7 +81,7 @@ p{
 
 .fondoFlores{
     width: 100%;
-    height: 240vh;
+    height: auto;
     background-image: url(./img/mariposas/16.jpg);
     background-size: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -114,9 +114,6 @@ button{
 .p-mediano{
     font-size: 24px;
 }
-
-
-
 
 
 .half-circle-border img {
