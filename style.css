@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Amperzand';
+    src: url('./font/amperzand/remachine-script/RemachineScript_Personal_Use.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentle';
+    src: url('./font/amperzand/a-gentle-touch/A\ Gentle\ Touch.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gentle', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+h1, h2{
+    color: #bb8b06
+}
+
+h1{
+    letter-spacing: 1.5px;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h5{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+h6{
+    font-size: 24px;
+}
+
+.corona{
+    width: 100%;
+    min-height: 110vh;
+    background-image: url('./img/coronas/c4.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+span{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.icon{
+    width: 230px;
+}
+
+.foto{
+    width: 80%;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.fondoFlores{
+    width: 100%;
+    height: 240vh;
+    background-image: url(./img/mariposas/16.jpg);
+    background-size: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button img{
+    width: 20px;
+}
+
+button{
+    width: auto;
+    border-radius: 20px;
+    border: none;
+    background-color: #bb8b06;
+    font-weight: bolder;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.p-grande{
+    font-size:50px;
+    font-weight: bolder;
+    background-color: #bb8b06;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.p-mediano{
+    font-size: 24px;
+}
+
+
+
+
+
+.half-circle-border img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+
+
+
+
