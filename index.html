@@ -22,26 +22,27 @@
 
             </div>
 
-            <h1 class="fw-bolder text-focus-in pb-5 pt-5">¡Queremos celebrarlo vos!</h1>
+            <h1 class="fw-bolder text-focus-in pb-5 pt-5">¡Queremos celebrarlo con vos!</h1>
             
             <div class="d-flex justify-content-between w-100 p-4 pt-0 text-focus-in">
                 <div class="text-center">
-                    <p class="p-grande pb-0 mb-0 px-2">20</p>
+                    <p class="p-grande pb-0 mb-0 px-2" id="days">00</p>
                     <p class="p-mediano py-2">Días</p>
                 </div>
                 <div class="text-center">
-                    <p class="p-grande pb-0 mb-0 px-2">08</p>
+                    <p class="p-grande pb-0 mb-0 px-2" id="hours">00</p>
                     <p class="p-mediano py-2">Horas</p>
                 </div>
                 <div class="text-center">
-                    <p class="p-grande pb-0 mb-0 px-2">51</p>
+                    <p class="p-grande pb-0 mb-0 px-2" id="minutes">00</p>
                     <p class="p-mediano py-2">Minutos</p>
                 </div>
                 <div class="text-center">
-                    <p class="p-grande pb-0 mb-0 px-2">51</p>
+                    <p class="p-grande pb-0 mb-0 px-2" id="seconds">00</p>
                     <p class="p-mediano py-2">Segundos</p>
                 </div>
             </div>
+        
         </div>
     </div>
 
@@ -82,16 +83,17 @@
         <img src="./img/decoraciones/pngtree-dividing-line-dividing-line-golden-vintage-pattern-pattern-frame-png-image_8687441-removebg-preview.png" width="100%">
 
         <div class="text-center">
-            <p class="py-3" style="font-size: 35px; letter-spacing: 2px; color: #fcba06; border-bottom: 1px solid #bb8b06; font-family: 'Sweetie', sans-serif;">Datos de laFiesta</p>
+            <p class="py-3" style="font-size: 35px; letter-spacing: 2px; color: #f7e11e; font-family: 'Sweetie', sans-serif;">Datos de laFiesta</p>
+            <hr class="mx-4 my-0 py-0" style="color: #bb8b06; border-bottom: 1px solid #bb8b06;">
             <ul class="text-start pt-5" style="font-size: 24px;">
-                <li class="py-2 fw-bold"  style="font-size: 30px;"><b>Fecha:</b> Viernes 20 de Marzo</li>
+                <li class="py-2 fw-bold"  style="font-size: 30px;"><b>Fecha:</b> Viernes 08 de Marzo</li>
                 <li class="py-2 fw-bold"><b>Dirección:</b> Aristóbulo del Valle 1647</li>
                 <li class="py-2 fw-bold"><b>Localidad:</b> Lanús oeste</li>
                 <li class="py-2 fw-bold"><b>Horario:</b> 20hs</li>
                 <li class="py-2 fw-bold"><b>Vestimenta:</b> Elegante/elegante sport</li>
             </ul>
             
-            <p class="py-3" style="font-family: 'Sweetie', sans-serif;color: #fcba06; letter-spacing: 4px;">Te espero!</p>
+            <p class="py-3" style="font-family: 'Sweetie', sans-serif;color: #f7e11e; letter-spacing: 4px;">Te espero!</p>
             <button class="px-3 py-2"><img src="./img/icons/285659_marker_map_icon.png"> Mirá aca la ubicación</button>
         </div>
 
@@ -118,6 +120,36 @@
         <h6 class="fw-bolder pt-3 pb-4" style="font-size: 40px; font-family: 'Sweetie', sans-serif;">Nos vemos pronto!</h6>
         <img class="mb-0 pb-0 img-shadow" src="./img/nahiara/4.jpg" width="400px" height="300px" style="border-radius: 100%;">
     </div>
+
+
+    <script>
+        // Fecha objetivo: 8 de marzo a las 20:00 horas
+        const targetDate = new Date('2024-03-08T21:00:00').getTime();
+
+        // Actualiza el contador cada segundo
+        const countdown = setInterval(function() {
+            const currentDate = new Date().getTime();
+            const timeLeft = targetDate - currentDate;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.getElementById('days').innerHTML = '00';
+                document.getElementById('hours').innerHTML = '00';
+                document.getElementById('minutes').innerHTML = '00';
+                document.getElementById('seconds').innerHTML = '00';
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+                document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
