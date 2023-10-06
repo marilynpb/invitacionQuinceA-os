@@ -77,7 +77,7 @@ h5{
 
 h6{
     font-size: 24px;
-    color: #f7e11e;
+    color: #FFD700;
 }
 
 .corona{
@@ -114,7 +114,7 @@ li{
     width: 80%;
     margin-bottom: 50px;
     border-radius: 8px;
-    border: 3px solid #bb8b06;
+    border: 3px solid #FFD700;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -136,7 +136,7 @@ button{
     width: auto;
     border-radius: 20px;
     border: none;
-    background-color: #f7e11e;
+    background-color: #FFD700;
     font-weight: bolder;
     color: #FFFFFF;
     letter-spacing: 2px;
@@ -147,7 +147,7 @@ button{
 .p-grande{
     font-size:38px;
     font-weight: bolder;
-    background-color: #f7e11e;
+    background-color: #FFD700;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
