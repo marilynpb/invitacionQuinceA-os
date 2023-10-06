@@ -1,9 +1,10 @@
+/*
 @font-face {
     font-family: 'Amperzand';
     src: url('./font/amperzand/remachine-script/RemachineScript_Personal_Use.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'Gentle';
@@ -12,11 +13,24 @@
     font-style: normal;
 }
 
+@font-face {
+        font-family: 'Digital';
+        src: url('./font/beautiful_5/Beautiful.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'Sweetie';
+        src: url('./font/sweetie_4/Sweetie.otf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Gentle', sans-serif;
     overflow-x: hidden;
 }
 
@@ -24,28 +38,46 @@ body{
     background-color: #FFFFFF;
 }
 
-h1, h2{
-    color: #bb8b06
-}
-
 h1{
     letter-spacing: 1.5px;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bolder;
+    font-family: 'Sweetie', sans-serif;
+    color: #272727;
+    letter-spacing: 4px;
 }
 
 h2{
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Digital', sans-serif;
+    color: #fcba06;
+}
+
+h3{
+        color: #f766ba;
+        font-family: 'Sweetie', sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        letter-spacing: 4px;
+}
+
+h4{
+        font-family: 'Sweetie', sans-serif;
+        color: #f766ba;
 }
 
 h5{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
+    font-family: 'Sweetie', sans-serif;
+    color: #383836;
 }
 
 h6{
     font-size: 24px;
+    color: #fcba06;
 }
 
 .corona{
@@ -66,6 +98,12 @@ span{
 p{
     font-size: 23px;
     font-weight: bolder;
+    font-family: 'Digital', sans-serif;
+}
+
+li{
+        font-family: 'Digital', sans-serif;
+
 }
 
 .icon{
@@ -76,13 +114,14 @@ p{
     width: 80%;
     margin-bottom: 50px;
     border-radius: 8px;
+    border: 2px solid #bb8b06;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .fondoFlores{
     width: 100%;
     height: auto;
-    max-height: 250vh;
+    max-height: 255vh;
     background-image: url(./img/mariposas/16.jpg);
     background-size: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -97,20 +136,22 @@ button{
     width: auto;
     border-radius: 20px;
     border: none;
-    background-color: #bb8b06;
+    background-color: #fcba06;
     font-weight: bolder;
     color: #FFFFFF;
     letter-spacing: 2px;
+    font-family: 'Gentle', sans-serif;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .p-grande{
     font-size:50px;
     font-weight: bolder;
-    background-color: #bb8b06;
+    background-color: #fcba06;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-family: 'Gentle', sans-serif;
 }
 
 .p-mediano{
@@ -120,6 +161,10 @@ button{
 
 .img-shadow{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+b{
+        color: #f766ba;
 }
 
 
